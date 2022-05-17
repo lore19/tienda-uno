@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tienda Online UNO</title>
+    <style>
+        body {
+            border: 4px double navy;
+            margin: 14px;
+            padding: 20px;
+            text-align: center;
+            background-color: lavenderblush;
+        }
+
+        h1, h2 {
+            color: blue;
+            font-size: 40px;
+            text-shadow: 7px 4px 5px yellow;
+            font-style: oblique;
+        }
+
+        p {
+            font-size: 20px;
+            color: red;
+        }
+
+        nav {
+            border: 2px solid aqua;
+            padding: 25px;
+            background-image: url("https://media.istockphoto.com/photos/stars-background-picture-id124627561?k=20&m=124627561&s=170667a&w=0&h=mCi0wVYZUBgtkR6bQMj8HsgQFUcc0ygaliG22DhiKeQ=");
+            background-size: 100% 100%;
+        }
+
+        .Menu li {
+            display: inline;
+            padding: 20px;
+        }
+
+        .Contacto li {
+            display: inline;
+        }
+
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            position: relative;
+        }
+
+        .logo{
+            width: 200px;
+            height: 100px;
+        }
+
+        /* carrito */
+        .carrito-items {
+            padding: 20px 0px;
+        }
+
+        .carrito-header {
+            border-bottom: 1px solid #ccc;
+        }
+
+        .carrito-imagen {
+            max-width: 50px;
+            border-radius: 20px;
+        }
+
+        .carrito-cantidad-input {
+            max-width: 45px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #eee;
+            padding: 5px;
+        }
+
+        .carrito-total {
+            min-height: 96px;
+        }
+
+    </style>
+</head>
+<body>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <header>
+        <div class="header-section">
+            <img class="logo" src="https://imagizer.imageshack.com/img924/3065/JWVkeW.png" alt="">
+            <ul class="nav nav-pills btn-lg">
+                <li class="nav-item"><a href="tienda.html" class="nav-link">Página Principal</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Cerrar Sesión</a></li>
+            </ul>
+        </div>
+        <hr/>
+        <h1>Tienda Online UNO</h1>
+        <br/>
+        <h2>Ropa de moda</h2>
+    </header>
+    <br/><br/>
+    <nav>
+        <p class="bg-info">Menú</p>
+        <br/>
+        <ul class="Menu">
+            <li><a href="remeras.html" class="btn btn-success btn-lg" role="button">Remeras</a></li>
+            <li><a href="pantalon.html" class="btn btn-info btn-lg" role="button">Pantalones</a></li>
+            <li><a href="abrigo.html" class="btn btn-warning btn-lg" role=" button">Abrigos</a></li>
+            <li><a href="calzado.html" class="btn btn-danger btn-lg" role="button">Calzado</a></li>
+        </ul>
+    </nav>
+    <br/><br/>
+    <section>
+        <p>Descubrí las ultimas tendencias de moda en la tienda online UNO!</p>
+        <br/><br/>
+        <p class="bg-info">Calzado</p>
+        <br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img924/4596/yeLpEA.png" class="card-img-top" alt="">
+                <h3>Zapatillas Jazmine</h3>
+                <p>$1000</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img922/3483/FZiRFo.png" class="card-img-top" alt="">
+                <h3>Zapatillas John</h3>
+                <p>$1100</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img922/1664/CJ5jXs.png" class="card-img-top" alt="">
+                <h3>Borcego Odessa Amarillo</h3>
+                <p>$1200</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img922/4167/juXpTX.png" class="card-img-top" alt="">
+                <h3>Botineta Denali Negra</h3>
+                <p>$1300</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img923/8784/QHDVDC.png" class="card-img-top" alt="">
+                <h3>Zapatillas con recortes</h3>
+                <p>$1400</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img922/5580/dEOH9G.png" class="card-img-top" alt="">
+                <h3>Sandalias faja ancha</h3>
+                <p>$1500</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <br/><br/>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img923/8642/ifsIF6.png" class="card-img-top" alt="">
+                <h3>Zapatillas tipo sneaker</h3>
+                <p>$1600</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="item col-md-5">
+                <img src="https://imagizer.imageshack.com/img923/2800/V5vfq7.png" class="card-img-top" alt="">
+                <h3>Zapatillas urbana con recortes</h3>
+                <p>$1700</p>
+                <button class="item-button btn btn-danger agregarProducto">Añadir al carrito</button>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        </section>
+        <br/><br/> 
+        <section>
+        <div>
+            <h1>Carrito</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="carrito-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="carrito-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="carrito-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carrito-items contenedorItems">
+            </div>
+            <div class="carrito-total">
+                <p>Total: </p>
+                <p class="carrTotal">0 $</p>
+                <button class="btn btn-success ml-auto comprarButton" type="button">Comprar</button>
+            </div>
+        </div>
+        </section>
+        <footer>
+             <hr/>
+             <h4> Contacto: </h4>
+             <ul class="Contacto">
+                 <li><p1><span class="material-icons">account_circle</span>Gomez, Lorena Edith</p1></li>
+                 <br/> <br/> 
+                 <li><p1><span class="material-icons">phone</span>1168017247</p1></li>
+                 <br/> <br/> 
+                 <li><span class="material-icons">mail</span><a href="mailto:loreedithgomez@gmail.com">Correo</a></li>
+                 <br/> <br/> 
+                 <li><span class="material-icons">school</span><a href="http://www.uno.edu.ar/">UNO - Universidad Nacional del Oeste</a></li>
+             </ul>
+             <br/> 
+             <strong>Derechos Reservados &copy; 2022</strong>
+       </footer>
+       <script src="./carrito.js"></script>
+   </body>
+</html>
